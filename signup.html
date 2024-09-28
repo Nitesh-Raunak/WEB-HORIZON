@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sign-Up Form</title>
+    <link rel="stylesheet" href="signStyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Live<span>Fit</span></a>
+
+        <nav class="navbar">
+            <a href="#">Dashboard</a>
+            <a href="#">Workout</a>
+            <a href="#">Tutorials</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
+            <button onclick="location.href='login.html'">Login</button>
+        </nav>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <div class="login-form" role="main">
+        <div class="main-box">
+            <div class="jss1658">
+                <form method="get" action="Action.html" class="result">
+                    <h1 id="login-head"><span>Welcome to LiveFit</span></h1>
+                    <p class="alternate">Already a member? <a href="Login.html">Log In</a></p>
+
+                    <label for="fname" class="property">First Name</label>
+                    <input class="box-size" id="fname" type="text" name="fname" placeholder="Enter First Name" required>
+
+                    <label for="lname" class="property">Last Name</label>
+                    <input class="box-size" id="lname" type="text" name="lname" placeholder="Enter Last Name" required>
+
+                    <label for="email" class="property">Email</label>
+                    <input class="box-size" id="email" type="email" name="email" placeholder="Enter Email" required>
+
+                    <label for="password" class="property">Password</label>
+                    <input class="box-size" id="password" type="password" name="pwd" placeholder="Enter Password" required>
+
+                    <label for="birthdate" class="property">Birthdate</label>
+                    <input class="box-size" id="birthdate" type="date" name="birthdate" required>
+
+                    <label class="property">Gender</label>
+                    <select name="gen" class="box-size">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                    <label class="property">Country/Region</label>
+                    <select name="country" class="box-size">
+                        <option value="none" selected>Select your country</option>
+                        <option value="india">India</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="china">China</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="japan">Japan</option>
+                    </select>
+
+                    <input id="newsletter" type="checkbox" name="newsletter" required>
+                    <label for="newsletter">Yes, I would like to receive the latest news, innovation updates, and offers.</label>
+
+                    <button type="submit" class="sub-btn" >SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

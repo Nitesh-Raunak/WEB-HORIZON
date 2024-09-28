@@ -1,0 +1,151 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+/* Welcome section styles */
+.welcome_fitness {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: linear-gradient(to right, #fff, #f0f0f0);
+}
+
+.intro {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.intro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card styles */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Section styles */
+.section {
+    padding: 50px 20px;
+}
+
+.black {
+    color: #333;
+}
+
+.yellow {
+    color: #ffcc00;
+}
+
+/* Expert trainers section styles */
+.expert_trainers .card {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+.obow_footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+.true_for_free, .call_for_free {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 675px) {
+    .welcome_fitness {
+        flex-direction: row;
+    }
+
+    .intro {
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
